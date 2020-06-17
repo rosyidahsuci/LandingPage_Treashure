@@ -20,7 +20,7 @@ test push
   <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <title>
-    Treashure Developer
+    Treashure
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -33,6 +33,12 @@ test push
   <link href="css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="css/argon-design-system.css?v=1.0.2" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body class="landing-page">
@@ -62,8 +68,12 @@ test push
           </div>
         </div>
         <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
-          <li class="nav-item dropdown">
-            <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+          <li class="nav-item">
+            <a href="#tentang-kami" class="nav-link">
+              <i class="ni ni-ui-04 d-lg-none"></i>
+              <span class="nav-link-inner--text">Tentang kami</span>
+            </a>
+            <!-- <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
               <i class="ni ni-ui-04 d-lg-none"></i>
               <span class="nav-link-inner--text">Elements</span>
             </a>
@@ -102,9 +112,37 @@ test push
                   Components
                 </a>
               </div>
-            </div>
+            </div> -->
+          </li>
+          <li class="nav-item">
+            <a href="#bank-sampah" class="nav-link">
+              <i class="ni ni-ui-04 d-lg-none"></i>
+              <span class="nav-link-inner--text">Bank Sampah</span>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="#harga-sampah" class="nav-link">
+              <i class="ni ni-ui-04 d-lg-none"></i>
+              <span class="nav-link-inner--text">Harga Sampah</span>
+            </a>
           </li>
           <li class="nav-item dropdown">
+            <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+              <i class="ni ni-tablet-button d-lg-none"></i>
+              <span class="nav-link-inner--text">Join Us</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/login">
+                <i class="ni ni-tv-2 text-danger"></i>
+                Login
+              </a>
+              <a class="dropdown-item" href="/register">
+                <i class="ni ni-air-baloon text-pink"></i>
+                Register
+              </a>
+            </div>
+          </li>
+          <!-- <li class="nav-item dropdown">
             <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
               <i class="ni ni-app d-lg-none"></i>
               <span class="nav-link-inner--text">Design Blocks</span>
@@ -239,7 +277,7 @@ test push
                 Chat Page
               </a>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -317,16 +355,16 @@ test push
         <div class="page-header header-video">
           <div class="overlay"></div>
           <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="img/treashure3.mp4" type="video/mp4">
+            <source src="img/treashurehd.mp4" type="video/mp4">
           </video>
           <div class="container text-center">
             <div class="row">
               <div class="col-lg-7 mx-auto">
-                <h1 class="video-text">TREASHURE</h1>
-                <h1 class="display-3 text-white">The Trash is Money!</h1>
-                <a href="https://www.creative-tim.com/product/argon-design-system-pro" class="btn btn-warning btn-icon mt-3 mb-sm-0">
+                <h1 class="video-text mb-0">TREASHURE</h1>
+                <h6 class="display-5 text-white">Banyak yang belum mengetahui bahwa sampah adalah harta</h6>
+                <a href="#tentang-kami" class="btn btn-warning btn-icon mt-3 mb-sm-0">
                   <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-                  <span class="btn-inner--text">Play more</span>
+                  <span class="btn-inner--text">Selengkapnya</span>
                 </a>
               </div>
             </div>
@@ -334,18 +372,23 @@ test push
         </div>
       </div>
     </header>
-    <div class="section features-6">
+    <div class="section features-6" id="tentang-kami">
       <div class="container">
-        <div class="row align-items-center">
+        <!-- <div class="row">
+          <div class="col-md-10 mx-auto text-center mb-0 pb-0">
+            <h2 class="desc my-5"> Treashure bisa apa ?</h2>
+          </div>
+        </div> -->
+        <div class="row align-items-center mt-0 pt-0">
           <div class="col-lg-6">
             <div class="info info-horizontal info-hover-primary">
               <div class="icon icon-shape icon-shape-info rounded-circle text-white">
-                <i class="ni ni-html5 text-info"></i>
+                <i class="ni ni-world  text-info"></i>
               </div>
               <div class="description pl-4">
-                <h5 class="title">For General Public</h5>
-                <p>Semua orang bisa melakukan pengolahan dan pemilahan sampah dari rumah. Mulai dari sampah dapur hingga sampah plastik bisa dibuang dengan kantong/tong sampah yang berbeda-beda.</p>
-                <a href="#" class="text-info">Learn more</a>
+                <h5 class="title">Umum</h5>
+                <p>Semua orang bisa melakukan pengolahan dan pemilahan sampah dari rumah. dan bisa menjual kepada bank sampah dengan harga yang sudah ditetapkan.</p>
+                <!-- <a href="#" class="text-info">Learn more</a> -->
               </div>
             </div>
             <div class="info info-horizontal info-hover-primary">
@@ -353,19 +396,19 @@ test push
                 <i class="ni ni-app text-info"></i>
               </div>
               <div class="description pl-4">
-                <h5 class="title">For Waste Collector</h5>
-                <p>Sampah-sampah yang telah diangkut oleh truk sampah akan diberikan kepada pengepul sampah / bank sampah. Bank sampah memiliki beberapa manfaat bagi manusia dan lingkungan hidup, seperti membuat ligkungan lebih bersih serta menyadarkan masyarakat akan pentingnya kebersihan. </p>
-                <a href="#" class="text-info">Learn more</a>
+                <h5 class="title">Bank Sampah</h5>
+                <p>Bertransaksi dengan nasabah atupun dengan pengepul. Pengaturan harga, jenis sampah, nasabah, dan laporan hasil transaksi. </p>
+                <!-- <a href="#" class="text-info">Learn more</a> -->
               </div>
             </div>
             <div class="info info-horizontal info-hover-primary">
               <div class="icon icon-shape icon-shape-info rounded-circle text-white">
-                <i class="ni ni-bell-55 text-info"></i>
+                <i class="ni ni-building text-info"></i>
               </div>
               <div class="description pl-4">
-                <h5 class="title">For Recycling Industry</h5>
-                <p>Populasi industri pengelolaan sampah terutama plastik di Indonesia sekitar 600 industri besar dan 700 industri kecil. Tujuan utama dari industri ini adalah untuk mengolah sampah menjadi produk yang bermanfaat dan memiliki nilai tambah.</p>
-                <a href="#" class="text-info">Learn more</a>
+                <h5 class="title">Pengepul atau Industri</h5>
+                <p>Sistem transaksi yang memudahkan rekam jejak (traceabily) dari sampah yang terkumpul. Penyajian data prediksi harga sampah kian waktu.</p>
+                <!-- <a href="#" class="text-info">Learn more</a> -->
               </div>
             </div>
           </div>
@@ -375,7 +418,7 @@ test push
         </div>
       </div>
     </div>
-    <div class="container text-center">
+    <div class="container text-center" id="bank-sampah">
       <div class="row mb-5">
         <div class="col-md-8 mx-auto">
           <h3 class="display-3">Bank Sampah</h3>
@@ -469,7 +512,7 @@ test push
         <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
       </button>
     </div>
-    <div class="section">
+    <div class="section" id="harga-sampah">
       <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto text-center">
@@ -488,11 +531,12 @@ test push
                   </div>
                   <div class="card-body">
                     <a href="javascript:;">
-                      <h4 class="card-title">Plastik Kresek</h4>
+                      <h4 class="card-title">Plastik</h4>
                     </a>
                     <div class="card-footer">
                       <div class="price-container">
-                        <span class="price">Rp. 1000</span>
+                        <span class="text-warning mr-2"><i class="fa fa-arrow-down"></i> Rp.  3250,- </span>
+                        <del class="price" style="font-size:10pt">Rp. 3500,-</del>
                       </div>
                     </div>
                   </div>
@@ -511,7 +555,8 @@ test push
                     </a>
                     <div class="card-footer">
                       <div class="price-container">
-                        <span class="price">Rp.1000</span>
+                        <span class="text-warning mr-2"><i class="fa fa-arrow-down"></i> Rp.  2250,- </span>
+                        <del class="price" style="font-size:10pt">Rp. 2500,-</del>
                         <!-- <span class="price-new ml-1"> &euro; 499</span> -->
                       </div>
                     </div>
@@ -531,7 +576,8 @@ test push
                     </a>
                     <div class="card-footer">
                       <div class="price-container">
-                        <span class="price">Rp. 1000</span>
+                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> Rp.  3250,- </span>
+                        <del class="price" style="font-size:10pt">Rp. 2000,-</del>
                       </div>
                     </div>
                   </div>
@@ -550,7 +596,8 @@ test push
                     </a>
                     <div class="card-footer">
                       <div class="price-container">
-                        <span class="price">Rp. 1000</span>
+                        <span class="text-warning mr-2"><i class="fa fa-arrow-down"></i> Rp.  3250,- </span>
+                        <del class="price" style="font-size:10pt">Rp. 3650,-</del>
                       </div>
                     </div>
                   </div>
@@ -568,8 +615,8 @@ test push
       <div class="container">
         <div class="row row-grid align-items-center mb-5">
           <div class="col-lg-6">
-            <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
-            <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
+            <h3 class="text-primary font-weight-light mb-2">Terimakasih telah mendukung kami.</h3>
+            <h4 class="mb-0 font-weight-light">Tetaplah terhubung dengan media kami.</h4>
           </div>
           <div class="col-lg-6 text-lg-center btn-wrapper">
             <button target="_blank" href="https://twitter.com/creativetim" rel="nofollow" class="btn btn-icon-only btn-twitter rounded-circle" data-toggle="tooltip" data-original-title="Follow us">
@@ -590,22 +637,22 @@ test push
         <div class="row align-items-center justify-content-md-between">
           <div class="col-md-6">
             <div class="copyright">
-              &copy; 2020 <a href="" target="_blank">Creative Tim</a>.
+              &copy; 2020 <a href="#" target="_blank">Treashure</a>.
             </div>
           </div>
           <div class="col-md-6">
             <ul class="nav nav-footer justify-content-end">
               <li class="nav-item">
-                <a href="" class="nav-link" target="_blank">Creative Tim</a>
+                <a href="#" class="nav-link" target="_blank">Treashure</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link" target="_blank">About Us</a>
+                <a href="#" class="nav-link" target="_blank">iData1011</a>
               </li>
               <li class="nav-item">
-                <a href="https://www.creative-tim.com/blog" class="nav-link" target="_blank">Blog</a>
+                <a href="#" class="nav-link" target="_blank">Blog</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link" target="_blank">License</a>
+                <a href="#" class="nav-link" target="_blank">Privacy Policy</a>
               </li>
             </ul>
           </div>
